@@ -13,6 +13,10 @@ else
 	_EOF
 
 	docker build -t hello -f ./Dockerfile_hello .
- 	docker run --name="hello_world" hello
+ 	docker run --name="hello" hello
+        
+        docker rm hello
+	docker rmi hello
+		
 fi
 
